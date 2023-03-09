@@ -1,7 +1,23 @@
 <!doctype html>
-<title></title>
+<html>
 <head>
+  {% if title%}
+  <title>Jokes4days - {{title}}</title>
+  {% else %}
+  <title>Jokes4days</title>
+  {% endif %}
+  <link rel ="stylesheet" href=static/styles.css">
 </head>
+<header class=header>{%block content%}{%endblock content%}</header>
 <body>
-  {%block content%}{%endblock content%}
+  
+  <nav class="navbar">
+    <ul class="navbar_list">
+      <li><a href=>Jokes4days</a></li>
+      <li><a href=>Home</a></li>
+      <li><a href=>About</a></li>
+    </ul>
+
+ 
 </body>
+</html>

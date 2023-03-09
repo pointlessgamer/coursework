@@ -7,12 +7,12 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/home')
 def home():
-    return 'Hello from Flask!'
+    return render_template('home.html')
 
 
 @app.route('/about')
 def about():
-  return 'This is the about page.'
+  return render_template('about.html', title = 'About')
 
 @app.route('/register')
 def register():
@@ -22,4 +22,4 @@ def register():
 def login():
   return 'This is the log on page'
 
-app.run(host='0.0.0.0', port=81)
+app.run(host='0.0.0.0', port=81,debug=True)
