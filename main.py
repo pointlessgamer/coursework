@@ -14,5 +14,12 @@ def home():
 def about():
   return 'This is the about page.'
 
+@app.route('/register')
+def register():
+  return 'This is the registration page'
+
+@app.route('/login')
+def login():
+  return 'This is the log on page'
 
 app.run(host='0.0.0.0', port=81)
