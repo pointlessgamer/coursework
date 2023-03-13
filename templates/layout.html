@@ -9,7 +9,7 @@
   <link rel ="stylesheet" href="static/style.css">
 </head>
 <header class=header>{%block content%}{%endblock content%}</header>
-<body>
+<body class = body>
   
   <nav class="navbar">
     <ul class="navbar_list">
@@ -18,6 +18,8 @@
       <li><a href=>About</a></li>
     </ul>
 
- 
+ {%block jokes%}{% endblock jokes%}
+ {%block data%}{%endblock data%}
+
 </body>
 </html>

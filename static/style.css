@@ -3,26 +3,35 @@
   margin:0;
   
 }
+
 #header
 .header{
-  background-color: #1bb1b1;
-  
+  background-color: #179696;
+  color: white;
+}
+
+#body
+.body{
+
+  background-color: #9c9c9c
 }
 
 #navbar
 .navbar{
   display: flex;
-  position:sticky;
+  position:flex;
   align-items:center;
   justify-content:center;
   top: 0px;
   cursor: pointer;
+  width:flex;
 }
 
 .navbar_list{
   width: 50%;
   display: flex;
   background-color:#1bb1b1
+
 }
 .navbar_list li{
   list-style: none;
@@ -42,5 +51,13 @@
 }
 
 .background{
-  color: #0fff
+  color: #0fff;
+}
+
+#jokes
+.jokes{
+  padding-top: 10px;
+}
+.jokes p{
+  background-color: #9a9898;
 }
